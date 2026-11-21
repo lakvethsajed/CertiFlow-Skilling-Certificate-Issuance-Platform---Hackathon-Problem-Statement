@@ -1,0 +1,373 @@
+2026-11-21 11:34:26.217 IST [14447] LOG:  starting PostgreSQL 18.6 on aarch64-apple-darwin24.6.0, compiled by Apple clang version 17.0.0 (clang-1700.0.13.5), 64-bit
+2026-11-21 11:34:26.218 IST [14447] LOG:  listening on IPv4 address "127.0.0.1", port 55433
+2026-11-21 11:34:26.221 IST [14453] LOG:  database system was shut down at 2026-11-21 11:34:26 IST
+2026-11-21 11:34:26.223 IST [14447] LOG:  database system is ready to accept connections
+2026-11-21 11:39:26.226 IST [14451] LOG:  checkpoint starting: time
+2026-11-21 11:42:57.304 IST [14451] LOG:  checkpoint complete: wrote 2081 buffers (12.7%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 1 recycled; write=211.053 s, sync=0.019 s, total=211.080 s; sync files=718, longest=0.002 s, average=0.001 s; distance=9920 kB, estimate=9920 kB; lsn=0/2154690, redo lsn=0/21394A8
+2026-11-21 11:44:26.308 IST [14451] LOG:  checkpoint starting: time
+2026-11-21 11:44:30.387 IST [14451] LOG:  checkpoint complete: wrote 40 buffers (0.2%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=4.068 s, sync=0.005 s, total=4.079 s; sync files=29, longest=0.002 s, average=0.001 s; distance=121 kB, estimate=8940 kB; lsn=0/21579B8, redo lsn=0/2157960
+2026-11-21 11:49:26.387 IST [14451] LOG:  checkpoint starting: time
+2026-11-21 11:49:28.023 IST [14451] LOG:  checkpoint complete: wrote 16 buffers (0.1%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=1.629 s, sync=0.002 s, total=1.637 s; sync files=17, longest=0.001 s, average=0.001 s; distance=11 kB, estimate=8047 kB; lsn=0/215A708, redo lsn=0/215A6B0
+2026-11-21 11:56:05.379 IST [16498] ERROR:  new row for relation "QualityReview" violates check constraint "QualityReview_decision_comment_check"
+2026-11-21 11:56:05.379 IST [16498] DETAIL:  Failing row contains (a5e54b32-f0fc-4c70-bf6e-e91ad957d9e7, e605844c-b1d2-40e4-bac9-41a40937c37e, RETURN,  
+	 , 2026-11-21 11:56:05.374+05:30).
+2026-11-21 11:56:05.379 IST [16498] STATEMENT:  INSERT INTO "QualityReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "QualityReview"."createdAt"
+2026-11-21 11:56:05.382 IST [16498] ERROR:  duplicate key value violates unique constraint "QualityReview_pkey"
+2026-11-21 11:56:05.382 IST [16498] DETAIL:  Key ("revisionId")=(a5e54b32-f0fc-4c70-bf6e-e91ad957d9e7) already exists.
+2026-11-21 11:56:05.382 IST [16498] STATEMENT:  INSERT INTO "QualityReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "QualityReview"."createdAt"
+2026-11-21 11:59:26.023 IST [14451] LOG:  checkpoint starting: time
+2026-11-21 12:03:12.592 IST [17233] ERROR:  new row for relation "QualityReview" violates check constraint "QualityReview_decision_comment_check"
+2026-11-21 12:03:12.592 IST [17233] DETAIL:  Failing row contains (d73fe7c7-e66a-45f5-9e47-c80bce22852f, 14927d12-364f-4b74-ade8-6c616167fea1, RETURN,  
+	 , 2026-11-21 12:03:12.587+05:30).
+2026-11-21 12:03:12.592 IST [17233] STATEMENT:  INSERT INTO "QualityReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "QualityReview"."createdAt"
+2026-11-21 12:03:12.594 IST [17233] ERROR:  duplicate key value violates unique constraint "QualityReview_pkey"
+2026-11-21 12:03:12.594 IST [17233] DETAIL:  Key ("revisionId")=(d73fe7c7-e66a-45f5-9e47-c80bce22852f) already exists.
+2026-11-21 12:03:12.594 IST [17233] STATEMENT:  INSERT INTO "QualityReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "QualityReview"."createdAt"
+2026-11-21 12:03:52.447 IST [17315] ERROR:  new row for relation "QualityReview" violates check constraint "QualityReview_decision_comment_check"
+2026-11-21 12:03:52.447 IST [17315] DETAIL:  Failing row contains (cfa00515-7134-477b-9fa3-c64784c5c359, 3592a0da-6b43-431d-a2c0-68d397dd7f3e, RETURN,  
+	 , 2026-11-21 12:03:52.44+05:30).
+2026-11-21 12:03:52.447 IST [17315] STATEMENT:  INSERT INTO "QualityReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "QualityReview"."createdAt"
+2026-11-21 12:03:52.449 IST [17315] ERROR:  duplicate key value violates unique constraint "QualityReview_pkey"
+2026-11-21 12:03:52.449 IST [17315] DETAIL:  Key ("revisionId")=(cfa00515-7134-477b-9fa3-c64784c5c359) already exists.
+2026-11-21 12:03:52.449 IST [17315] STATEMENT:  INSERT INTO "QualityReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "QualityReview"."createdAt"
+2026-11-21 12:03:56.100 IST [14451] LOG:  checkpoint complete: wrote 4050 buffers (24.7%), wrote 2 SLRU buffers; 0 WAL file(s) added, 0 removed, 1 recycled; write=269.974 s, sync=0.098 s, total=270.078 s; sync files=2889, longest=0.001 s, average=0.001 s; distance=19507 kB, estimate=19507 kB; lsn=0/47E5F70, redo lsn=0/34675F8
+2026-11-21 12:04:26.104 IST [14451] LOG:  checkpoint starting: time
+2026-11-21 12:05:19.485 IST [17670] ERROR:  new row for relation "QualityReview" violates check constraint "QualityReview_decision_comment_check"
+2026-11-21 12:05:19.485 IST [17670] DETAIL:  Failing row contains (24d2dd24-95a3-4380-8af9-aa9ceff828f3, 5f4c641f-5d53-47ee-a0c0-6a9b39d20896, RETURN,  
+	 , 2026-11-21 12:05:19.48+05:30).
+2026-11-21 12:05:19.485 IST [17670] STATEMENT:  INSERT INTO "QualityReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "QualityReview"."createdAt"
+2026-11-21 12:05:19.487 IST [17670] ERROR:  duplicate key value violates unique constraint "QualityReview_pkey"
+2026-11-21 12:05:19.487 IST [17670] DETAIL:  Key ("revisionId")=(24d2dd24-95a3-4380-8af9-aa9ceff828f3) already exists.
+2026-11-21 12:05:19.487 IST [17670] STATEMENT:  INSERT INTO "QualityReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "QualityReview"."createdAt"
+2026-11-21 12:07:48.349 IST [17901] ERROR:  new row for relation "QualityReview" violates check constraint "QualityReview_decision_comment_check"
+2026-11-21 12:07:48.349 IST [17901] DETAIL:  Failing row contains (e2482e94-f4b0-410e-acfe-f73f6626da66, 0c947aa3-f57e-4e7e-836b-aca3ea18129b, RETURN,  
+	 , 2026-11-21 12:07:48.344+05:30).
+2026-11-21 12:07:48.349 IST [17901] STATEMENT:  INSERT INTO "QualityReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "QualityReview"."createdAt"
+2026-11-21 12:07:48.352 IST [17901] ERROR:  duplicate key value violates unique constraint "QualityReview_pkey"
+2026-11-21 12:07:48.352 IST [17901] DETAIL:  Key ("revisionId")=(e2482e94-f4b0-410e-acfe-f73f6626da66) already exists.
+2026-11-21 12:07:48.352 IST [17901] STATEMENT:  INSERT INTO "QualityReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "QualityReview"."createdAt"
+2026-11-21 12:08:56.114 IST [14451] LOG:  checkpoint complete: wrote 3635 buffers (22.2%), wrote 2 SLRU buffers; 0 WAL file(s) added, 0 removed, 1 recycled; write=269.908 s, sync=0.100 s, total=270.011 s; sync files=3266, longest=0.002 s, average=0.001 s; distance=20008 kB, estimate=20008 kB; lsn=0/657FA40, redo lsn=0/47F18D0
+2026-11-21 12:12:46.938 IST [18433] ERROR:  new row for relation "QualityReview" violates check constraint "QualityReview_decision_comment_check"
+2026-11-21 12:12:46.938 IST [18433] DETAIL:  Failing row contains (3734bad2-9759-4ca8-a5ee-56bbf77a7738, b1df2e95-3c13-40d6-8570-c238c6e4f737, RETURN,  
+	 , 2026-11-21 12:12:46.932+05:30).
+2026-11-21 12:12:46.938 IST [18433] STATEMENT:  INSERT INTO "QualityReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "QualityReview"."createdAt"
+2026-11-21 12:12:46.940 IST [18433] ERROR:  duplicate key value violates unique constraint "QualityReview_pkey"
+2026-11-21 12:12:46.940 IST [18433] DETAIL:  Key ("revisionId")=(3734bad2-9759-4ca8-a5ee-56bbf77a7738) already exists.
+2026-11-21 12:12:46.940 IST [18433] STATEMENT:  INSERT INTO "QualityReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "QualityReview"."createdAt"
+2026-11-21 12:12:47.576 IST [18436] ERROR:  new row for relation "StateReview" violates check constraint "StateReview_decision_comment_check"
+2026-11-21 12:12:47.576 IST [18436] DETAIL:  Failing row contains (1e857010-1c0b-47ec-a400-d1f2886cffc0, 03202a7a-b5cf-440e-90c6-df7f3bbca5a5, RETURN,  	 , 2026-11-21 12:12:47.573+05:30).
+2026-11-21 12:12:47.576 IST [18436] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "StateReview"."createdAt"
+2026-11-21 12:12:47.577 IST [18436] ERROR:  new row for relation "StateReview" violates check constraint "StateReview_decision_comment_check"
+2026-11-21 12:12:47.577 IST [18436] DETAIL:  Failing row contains (1e857010-1c0b-47ec-a400-d1f2886cffc0, 03202a7a-b5cf-440e-90c6-df7f3bbca5a5, REJECT,  	 , 2026-11-21 12:12:47.573+05:30).
+2026-11-21 12:12:47.577 IST [18436] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "StateReview"."createdAt"
+2026-11-21 12:12:47.578 IST [18436] ERROR:  duplicate key value violates unique constraint "StateReview_pkey"
+2026-11-21 12:12:47.578 IST [18436] DETAIL:  Key ("revisionId")=(1e857010-1c0b-47ec-a400-d1f2886cffc0) already exists.
+2026-11-21 12:12:47.578 IST [18436] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision) VALUES ($1::VARCHAR, $2::VARCHAR, $3) RETURNING "StateReview".comment, "StateReview"."createdAt"
+2026-11-21 12:14:26.125 IST [14451] LOG:  checkpoint starting: time
+2026-11-21 12:16:32.417 IST [19104] ERROR:  new row for relation "QualityReview" violates check constraint "QualityReview_decision_comment_check"
+2026-11-21 12:16:32.417 IST [19104] DETAIL:  Failing row contains (e0dbd037-11c0-42ae-928c-559b576bd5d1, c67e7f67-ea47-4008-8b74-7dd98c4ba207, RETURN,  
+	 , 2026-11-21 12:16:32.409+05:30).
+2026-11-21 12:16:32.417 IST [19104] STATEMENT:  INSERT INTO "QualityReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "QualityReview"."createdAt"
+2026-11-21 12:16:32.419 IST [19104] ERROR:  duplicate key value violates unique constraint "QualityReview_pkey"
+2026-11-21 12:16:32.419 IST [19104] DETAIL:  Key ("revisionId")=(e0dbd037-11c0-42ae-928c-559b576bd5d1) already exists.
+2026-11-21 12:16:32.419 IST [19104] STATEMENT:  INSERT INTO "QualityReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "QualityReview"."createdAt"
+2026-11-21 12:16:33.084 IST [19109] ERROR:  new row for relation "StateReview" violates check constraint "StateReview_decision_comment_check"
+2026-11-21 12:16:33.084 IST [19109] DETAIL:  Failing row contains (6b610de4-3740-4cde-8e12-2cf129d72ee5, a4876ecf-7e7b-44ce-89ee-495bc1fb56dc, RETURN,  	 , 2026-11-21 12:16:33.081+05:30).
+2026-11-21 12:16:33.084 IST [19109] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "StateReview"."createdAt"
+2026-11-21 12:16:33.085 IST [19109] ERROR:  new row for relation "StateReview" violates check constraint "StateReview_decision_comment_check"
+2026-11-21 12:16:33.085 IST [19109] DETAIL:  Failing row contains (6b610de4-3740-4cde-8e12-2cf129d72ee5, a4876ecf-7e7b-44ce-89ee-495bc1fb56dc, REJECT,  	 , 2026-11-21 12:16:33.081+05:30).
+2026-11-21 12:16:33.085 IST [19109] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "StateReview"."createdAt"
+2026-11-21 12:16:33.087 IST [19109] ERROR:  duplicate key value violates unique constraint "StateReview_pkey"
+2026-11-21 12:16:33.087 IST [19109] DETAIL:  Key ("revisionId")=(6b610de4-3740-4cde-8e12-2cf129d72ee5) already exists.
+2026-11-21 12:16:33.087 IST [19109] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision) VALUES ($1::VARCHAR, $2::VARCHAR, $3) RETURNING "StateReview".comment, "StateReview"."createdAt"
+2026-11-21 12:18:56.094 IST [14451] LOG:  checkpoint complete: wrote 6544 buffers (39.9%), wrote 2 SLRU buffers; 0 WAL file(s) added, 0 removed, 2 recycled; write=269.886 s, sync=0.076 s, total=269.970 s; sync files=1906, longest=0.001 s, average=0.001 s; distance=40682 kB, estimate=40682 kB; lsn=0/7097138, redo lsn=0/6FAC358
+2026-11-21 12:20:21.759 IST [20182] ERROR:  new row for relation "QualityReview" violates check constraint "QualityReview_decision_comment_check"
+2026-11-21 12:20:21.759 IST [20182] DETAIL:  Failing row contains (94c7dd8c-683e-4dfd-9057-94be6fe5d6c6, 9fc252d4-0c30-4de8-a372-eef18dc124e7, RETURN,  
+	 , 2026-11-21 12:20:21.749+05:30).
+2026-11-21 12:20:21.759 IST [20182] STATEMENT:  INSERT INTO "QualityReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "QualityReview"."createdAt"
+2026-11-21 12:20:21.762 IST [20182] ERROR:  duplicate key value violates unique constraint "QualityReview_pkey"
+2026-11-21 12:20:21.762 IST [20182] DETAIL:  Key ("revisionId")=(94c7dd8c-683e-4dfd-9057-94be6fe5d6c6) already exists.
+2026-11-21 12:20:21.762 IST [20182] STATEMENT:  INSERT INTO "QualityReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "QualityReview"."createdAt"
+2026-11-21 12:20:22.637 IST [20185] ERROR:  new row for relation "StateReview" violates check constraint "StateReview_decision_comment_check"
+2026-11-21 12:20:22.637 IST [20185] DETAIL:  Failing row contains (29d0699a-ee87-43cd-848a-f11ef99d5fc7, 77530d1c-888a-4a17-bfa0-99462ffc75f6, RETURN,  	 , 2026-11-21 12:20:22.631+05:30).
+2026-11-21 12:20:22.637 IST [20185] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "StateReview"."createdAt"
+2026-11-21 12:20:22.638 IST [20185] ERROR:  new row for relation "StateReview" violates check constraint "StateReview_decision_comment_check"
+2026-11-21 12:20:22.638 IST [20185] DETAIL:  Failing row contains (29d0699a-ee87-43cd-848a-f11ef99d5fc7, 77530d1c-888a-4a17-bfa0-99462ffc75f6, REJECT,  	 , 2026-11-21 12:20:22.631+05:30).
+2026-11-21 12:20:22.638 IST [20185] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "StateReview"."createdAt"
+2026-11-21 12:20:22.640 IST [20185] ERROR:  duplicate key value violates unique constraint "StateReview_pkey"
+2026-11-21 12:20:22.640 IST [20185] DETAIL:  Key ("revisionId")=(29d0699a-ee87-43cd-848a-f11ef99d5fc7) already exists.
+2026-11-21 12:20:22.640 IST [20185] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision) VALUES ($1::VARCHAR, $2::VARCHAR, $3) RETURNING "StateReview".comment, "StateReview"."createdAt"
+2026-11-21 12:23:22.084 IST [20453] ERROR:  new row for relation "QualityReview" violates check constraint "QualityReview_decision_comment_check"
+2026-11-21 12:23:22.084 IST [20453] DETAIL:  Failing row contains (7f1bccf6-275b-40a6-a44f-060e8cd44046, dae042ee-f77e-4776-a6de-d63e07c2e3a8, RETURN,  
+	 , 2026-11-21 12:23:22.077+05:30).
+2026-11-21 12:23:22.084 IST [20453] STATEMENT:  INSERT INTO "QualityReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "QualityReview"."createdAt"
+2026-11-21 12:23:22.087 IST [20453] ERROR:  duplicate key value violates unique constraint "QualityReview_pkey"
+2026-11-21 12:23:22.087 IST [20453] DETAIL:  Key ("revisionId")=(7f1bccf6-275b-40a6-a44f-060e8cd44046) already exists.
+2026-11-21 12:23:22.087 IST [20453] STATEMENT:  INSERT INTO "QualityReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "QualityReview"."createdAt"
+2026-11-21 12:23:23.188 IST [20459] ERROR:  new row for relation "StateReview" violates check constraint "StateReview_decision_comment_check"
+2026-11-21 12:23:23.188 IST [20459] DETAIL:  Failing row contains (2a4768aa-e3e7-4854-a3bf-dcf2177c811d, 1f01b2df-5a65-473e-8210-5edd29abea03, RETURN,  	 , 2026-11-21 12:23:23.184+05:30).
+2026-11-21 12:23:23.188 IST [20459] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "StateReview"."createdAt"
+2026-11-21 12:23:23.188 IST [20459] ERROR:  new row for relation "StateReview" violates check constraint "StateReview_decision_comment_check"
+2026-11-21 12:23:23.188 IST [20459] DETAIL:  Failing row contains (2a4768aa-e3e7-4854-a3bf-dcf2177c811d, 1f01b2df-5a65-473e-8210-5edd29abea03, REJECT,  	 , 2026-11-21 12:23:23.184+05:30).
+2026-11-21 12:23:23.188 IST [20459] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "StateReview"."createdAt"
+2026-11-21 12:23:23.190 IST [20459] ERROR:  duplicate key value violates unique constraint "StateReview_pkey"
+2026-11-21 12:23:23.190 IST [20459] DETAIL:  Key ("revisionId")=(2a4768aa-e3e7-4854-a3bf-dcf2177c811d) already exists.
+2026-11-21 12:23:23.190 IST [20459] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision) VALUES ($1::VARCHAR, $2::VARCHAR, $3) RETURNING "StateReview".comment, "StateReview"."createdAt"
+2026-11-21 12:23:50.018 IST [20536] ERROR:  new row for relation "QualityReview" violates check constraint "QualityReview_decision_comment_check"
+2026-11-21 12:23:50.018 IST [20536] DETAIL:  Failing row contains (d8e82ab3-f89a-45cd-92b4-ca28f4de47cc, 2b58a88e-6774-4096-9b04-dd18b14cd15f, RETURN,  
+	 , 2026-11-21 12:23:50.014+05:30).
+2026-11-21 12:23:50.018 IST [20536] STATEMENT:  INSERT INTO "QualityReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "QualityReview"."createdAt"
+2026-11-21 12:23:50.020 IST [20536] ERROR:  duplicate key value violates unique constraint "QualityReview_pkey"
+2026-11-21 12:23:50.020 IST [20536] DETAIL:  Key ("revisionId")=(d8e82ab3-f89a-45cd-92b4-ca28f4de47cc) already exists.
+2026-11-21 12:23:50.020 IST [20536] STATEMENT:  INSERT INTO "QualityReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "QualityReview"."createdAt"
+2026-11-21 12:23:51.313 IST [20542] ERROR:  new row for relation "StateReview" violates check constraint "StateReview_decision_comment_check"
+2026-11-21 12:23:51.313 IST [20542] DETAIL:  Failing row contains (9c92326e-ee2d-4133-9e6c-4998112664d5, bff9f7ef-f19c-491b-af3f-42fbac89be46, RETURN,  	 , 2026-11-21 12:23:51.309+05:30).
+2026-11-21 12:23:51.313 IST [20542] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "StateReview"."createdAt"
+2026-11-21 12:23:51.314 IST [20542] ERROR:  new row for relation "StateReview" violates check constraint "StateReview_decision_comment_check"
+2026-11-21 12:23:51.314 IST [20542] DETAIL:  Failing row contains (9c92326e-ee2d-4133-9e6c-4998112664d5, bff9f7ef-f19c-491b-af3f-42fbac89be46, REJECT,  	 , 2026-11-21 12:23:51.309+05:30).
+2026-11-21 12:23:51.314 IST [20542] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "StateReview"."createdAt"
+2026-11-21 12:23:51.315 IST [20542] ERROR:  duplicate key value violates unique constraint "StateReview_pkey"
+2026-11-21 12:23:51.315 IST [20542] DETAIL:  Key ("revisionId")=(9c92326e-ee2d-4133-9e6c-4998112664d5) already exists.
+2026-11-21 12:23:51.315 IST [20542] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision) VALUES ($1::VARCHAR, $2::VARCHAR, $3) RETURNING "StateReview".comment, "StateReview"."createdAt"
+2026-11-21 12:24:26.097 IST [14451] LOG:  checkpoint starting: time
+2026-11-21 12:25:09.066 IST [14451] LOG:  checkpoint complete: wrote 423 buffers (2.6%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 1 recycled; write=42.959 s, sync=0.003 s, total=42.969 s; sync files=135, longest=0.001 s, average=0.001 s; distance=3390 kB, estimate=36953 kB; lsn=0/73E7E78, redo lsn=0/72FBE28
+2026-11-21 12:28:22.910 IST [20834] ERROR:  new row for relation "QualityReview" violates check constraint "QualityReview_decision_comment_check"
+2026-11-21 12:28:22.910 IST [20834] DETAIL:  Failing row contains (1aabf180-25d4-4b86-88b0-4d5e94373db8, beea170b-e9aa-4449-821b-c4277e0da4d8, RETURN,  
+	 , 2026-11-21 12:28:22.903+05:30).
+2026-11-21 12:28:22.910 IST [20834] STATEMENT:  INSERT INTO "QualityReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "QualityReview"."createdAt"
+2026-11-21 12:28:22.912 IST [20834] ERROR:  duplicate key value violates unique constraint "QualityReview_pkey"
+2026-11-21 12:28:22.912 IST [20834] DETAIL:  Key ("revisionId")=(1aabf180-25d4-4b86-88b0-4d5e94373db8) already exists.
+2026-11-21 12:28:22.912 IST [20834] STATEMENT:  INSERT INTO "QualityReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "QualityReview"."createdAt"
+2026-11-21 12:28:24.416 IST [20838] ERROR:  new row for relation "StateReview" violates check constraint "StateReview_decision_comment_check"
+2026-11-21 12:28:24.416 IST [20838] DETAIL:  Failing row contains (735bb7fe-7899-4b87-8b34-c1b9b2904ce6, 4de354d4-5d00-4850-9544-4b60c8242388, RETURN,  	 , 2026-11-21 12:28:24.412+05:30).
+2026-11-21 12:28:24.416 IST [20838] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "StateReview"."createdAt"
+2026-11-21 12:28:24.416 IST [20838] ERROR:  new row for relation "StateReview" violates check constraint "StateReview_decision_comment_check"
+2026-11-21 12:28:24.416 IST [20838] DETAIL:  Failing row contains (735bb7fe-7899-4b87-8b34-c1b9b2904ce6, 4de354d4-5d00-4850-9544-4b60c8242388, REJECT,  	 , 2026-11-21 12:28:24.412+05:30).
+2026-11-21 12:28:24.416 IST [20838] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "StateReview"."createdAt"
+2026-11-21 12:28:24.418 IST [20838] ERROR:  duplicate key value violates unique constraint "StateReview_pkey"
+2026-11-21 12:28:24.418 IST [20838] DETAIL:  Key ("revisionId")=(735bb7fe-7899-4b87-8b34-c1b9b2904ce6) already exists.
+2026-11-21 12:28:24.418 IST [20838] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision) VALUES ($1::VARCHAR, $2::VARCHAR, $3) RETURNING "StateReview".comment, "StateReview"."createdAt"
+2026-11-21 12:29:26.070 IST [14451] LOG:  checkpoint starting: time
+2026-11-21 12:29:56.972 IST [14451] LOG:  checkpoint complete: wrote 304 buffers (1.9%), wrote 2 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=30.893 s, sync=0.004 s, total=30.903 s; sync files=103, longest=0.001 s, average=0.001 s; distance=2661 kB, estimate=33524 kB; lsn=0/75952F0, redo lsn=0/7595260
+2026-11-21 12:34:18.987 IST [21245] ERROR:  new row for relation "QualityReview" violates check constraint "QualityReview_decision_comment_check"
+2026-11-21 12:34:18.987 IST [21245] DETAIL:  Failing row contains (a71be831-d240-4aae-afe6-d0328219537a, 39949a43-b6df-47fc-b962-6e777157e3ad, RETURN,  
+	 , 2026-11-21 12:34:18.978+05:30).
+2026-11-21 12:34:18.987 IST [21245] STATEMENT:  INSERT INTO "QualityReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "QualityReview"."createdAt"
+2026-11-21 12:34:18.990 IST [21245] ERROR:  duplicate key value violates unique constraint "QualityReview_pkey"
+2026-11-21 12:34:18.990 IST [21245] DETAIL:  Key ("revisionId")=(a71be831-d240-4aae-afe6-d0328219537a) already exists.
+2026-11-21 12:34:18.990 IST [21245] STATEMENT:  INSERT INTO "QualityReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "QualityReview"."createdAt"
+2026-11-21 12:34:20.604 IST [21263] ERROR:  new row for relation "StateReview" violates check constraint "StateReview_decision_comment_check"
+2026-11-21 12:34:20.604 IST [21263] DETAIL:  Failing row contains (80523396-3319-4cf3-a23f-418d9f49b8e9, e161caff-aeee-4ef1-80cf-7c47456a7fa6, RETURN,  	 , 2026-11-21 12:34:20.6+05:30).
+2026-11-21 12:34:20.604 IST [21263] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "StateReview"."createdAt"
+2026-11-21 12:34:20.605 IST [21263] ERROR:  new row for relation "StateReview" violates check constraint "StateReview_decision_comment_check"
+2026-11-21 12:34:20.605 IST [21263] DETAIL:  Failing row contains (80523396-3319-4cf3-a23f-418d9f49b8e9, e161caff-aeee-4ef1-80cf-7c47456a7fa6, REJECT,  	 , 2026-11-21 12:34:20.6+05:30).
+2026-11-21 12:34:20.605 IST [21263] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "StateReview"."createdAt"
+2026-11-21 12:34:20.606 IST [21263] ERROR:  duplicate key value violates unique constraint "StateReview_pkey"
+2026-11-21 12:34:20.606 IST [21263] DETAIL:  Key ("revisionId")=(80523396-3319-4cf3-a23f-418d9f49b8e9) already exists.
+2026-11-21 12:34:20.606 IST [21263] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision) VALUES ($1::VARCHAR, $2::VARCHAR, $3) RETURNING "StateReview".comment, "StateReview"."createdAt"
+2026-11-21 12:34:26.974 IST [14451] LOG:  checkpoint starting: time
+2026-11-21 12:34:50.729 IST [14451] LOG:  checkpoint complete: wrote 234 buffers (1.4%), wrote 2 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=23.746 s, sync=0.005 s, total=23.755 s; sync files=64, longest=0.001 s, average=0.001 s; distance=1625 kB, estimate=30334 kB; lsn=0/78503C0, redo lsn=0/772BA30
+2026-11-21 12:39:26.731 IST [14451] LOG:  checkpoint starting: time
+2026-11-21 12:39:45.833 IST [14451] LOG:  checkpoint complete: wrote 188 buffers (1.1%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=19.095 s, sync=0.002 s, total=19.103 s; sync files=36, longest=0.001 s, average=0.001 s; distance=1277 kB, estimate=27428 kB; lsn=0/786AF70, redo lsn=0/786AEE0
+2026-11-21 12:42:37.722 IST [22759] ERROR:  new row for relation "QualityReview" violates check constraint "QualityReview_decision_comment_check"
+2026-11-21 12:42:37.722 IST [22759] DETAIL:  Failing row contains (d3ef4489-8aa4-4342-b788-4cf9a02ea37c, 37a48b3e-eda0-4d21-90f7-2113652e6548, RETURN,  
+	 , 2026-11-21 12:42:37.713+05:30).
+2026-11-21 12:42:37.722 IST [22759] STATEMENT:  INSERT INTO "QualityReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "QualityReview"."createdAt"
+2026-11-21 12:42:37.725 IST [22759] ERROR:  duplicate key value violates unique constraint "QualityReview_pkey"
+2026-11-21 12:42:37.725 IST [22759] DETAIL:  Key ("revisionId")=(d3ef4489-8aa4-4342-b788-4cf9a02ea37c) already exists.
+2026-11-21 12:42:37.725 IST [22759] STATEMENT:  INSERT INTO "QualityReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "QualityReview"."createdAt"
+2026-11-21 12:42:39.363 IST [22764] ERROR:  new row for relation "StateReview" violates check constraint "StateReview_decision_comment_check"
+2026-11-21 12:42:39.363 IST [22764] DETAIL:  Failing row contains (562d6999-396b-459a-b588-1d338b532437, 6c0fa282-7b91-43f8-80b0-3a807ef64ebc, RETURN,  	 , 2026-11-21 12:42:39.36+05:30).
+2026-11-21 12:42:39.363 IST [22764] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "StateReview"."createdAt"
+2026-11-21 12:42:39.363 IST [22764] ERROR:  new row for relation "StateReview" violates check constraint "StateReview_decision_comment_check"
+2026-11-21 12:42:39.363 IST [22764] DETAIL:  Failing row contains (562d6999-396b-459a-b588-1d338b532437, 6c0fa282-7b91-43f8-80b0-3a807ef64ebc, REJECT,  	 , 2026-11-21 12:42:39.36+05:30).
+2026-11-21 12:42:39.363 IST [22764] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "StateReview"."createdAt"
+2026-11-21 12:42:39.365 IST [22764] ERROR:  duplicate key value violates unique constraint "StateReview_pkey"
+2026-11-21 12:42:39.365 IST [22764] DETAIL:  Key ("revisionId")=(562d6999-396b-459a-b588-1d338b532437) already exists.
+2026-11-21 12:42:39.365 IST [22764] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision) VALUES ($1::VARCHAR, $2::VARCHAR, $3) RETURNING "StateReview".comment, "StateReview"."createdAt"
+2026-11-21 12:44:26.836 IST [14451] LOG:  checkpoint starting: time
+2026-11-21 12:45:00.366 IST [14451] LOG:  checkpoint complete: wrote 331 buffers (2.0%), wrote 2 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=33.524 s, sync=0.002 s, total=33.531 s; sync files=85, longest=0.001 s, average=0.001 s; distance=2258 kB, estimate=24911 kB; lsn=0/7AA5B50, redo lsn=0/7A9F800
+2026-11-21 12:49:26.368 IST [14451] LOG:  checkpoint starting: time
+2026-11-21 12:49:28.830 IST [14451] LOG:  checkpoint complete: wrote 24 buffers (0.1%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=2.454 s, sync=0.003 s, total=2.463 s; sync files=25, longest=0.001 s, average=0.001 s; distance=29 kB, estimate=22423 kB; lsn=0/7AA7018, redo lsn=0/7AA6FC0
+2026-11-21 13:01:42.075 IST [23703] ERROR:  new row for relation "QualityReview" violates check constraint "QualityReview_decision_comment_check"
+2026-11-21 13:01:42.075 IST [23703] DETAIL:  Failing row contains (1813b1de-0663-4dd5-9ade-069a1daca96d, 781e9b52-3295-44d1-873f-12c8a3d10ebf, RETURN,  
+	 , 2026-11-21 13:01:42.067+05:30).
+2026-11-21 13:01:42.075 IST [23703] STATEMENT:  INSERT INTO "QualityReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "QualityReview"."createdAt"
+2026-11-21 13:01:42.077 IST [23703] ERROR:  duplicate key value violates unique constraint "QualityReview_pkey"
+2026-11-21 13:01:42.077 IST [23703] DETAIL:  Key ("revisionId")=(1813b1de-0663-4dd5-9ade-069a1daca96d) already exists.
+2026-11-21 13:01:42.077 IST [23703] STATEMENT:  INSERT INTO "QualityReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "QualityReview"."createdAt"
+2026-11-21 13:01:43.813 IST [23714] ERROR:  new row for relation "StateReview" violates check constraint "StateReview_decision_comment_check"
+2026-11-21 13:01:43.813 IST [23714] DETAIL:  Failing row contains (872bfb62-c4f6-4f35-8a39-52ce1185fb56, 1cbe392e-416c-41ad-9d25-ecae64278865, RETURN,  	 , 2026-11-21 13:01:43.81+05:30).
+2026-11-21 13:01:43.813 IST [23714] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "StateReview"."createdAt"
+2026-11-21 13:01:43.814 IST [23714] ERROR:  new row for relation "StateReview" violates check constraint "StateReview_decision_comment_check"
+2026-11-21 13:01:43.814 IST [23714] DETAIL:  Failing row contains (872bfb62-c4f6-4f35-8a39-52ce1185fb56, 1cbe392e-416c-41ad-9d25-ecae64278865, REJECT,  	 , 2026-11-21 13:01:43.81+05:30).
+2026-11-21 13:01:43.814 IST [23714] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "StateReview"."createdAt"
+2026-11-21 13:01:43.816 IST [23714] ERROR:  duplicate key value violates unique constraint "StateReview_pkey"
+2026-11-21 13:01:43.816 IST [23714] DETAIL:  Key ("revisionId")=(872bfb62-c4f6-4f35-8a39-52ce1185fb56) already exists.
+2026-11-21 13:01:43.816 IST [23714] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision) VALUES ($1::VARCHAR, $2::VARCHAR, $3) RETURNING "StateReview".comment, "StateReview"."createdAt"
+2026-11-21 13:04:05.653 IST [23930] ERROR:  new row for relation "QualityReview" violates check constraint "QualityReview_decision_comment_check"
+2026-11-21 13:04:05.653 IST [23930] DETAIL:  Failing row contains (5e310434-2297-4f25-b6c3-d3aada9cbcf5, 979e8073-7363-4613-9b81-61253c7c5561, RETURN,  
+	 , 2026-11-21 13:04:05.644+05:30).
+2026-11-21 13:04:05.653 IST [23930] STATEMENT:  INSERT INTO "QualityReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "QualityReview"."createdAt"
+2026-11-21 13:04:05.657 IST [23930] ERROR:  duplicate key value violates unique constraint "QualityReview_pkey"
+2026-11-21 13:04:05.657 IST [23930] DETAIL:  Key ("revisionId")=(5e310434-2297-4f25-b6c3-d3aada9cbcf5) already exists.
+2026-11-21 13:04:05.657 IST [23930] STATEMENT:  INSERT INTO "QualityReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "QualityReview"."createdAt"
+2026-11-21 13:04:07.347 IST [23940] ERROR:  new row for relation "StateReview" violates check constraint "StateReview_decision_comment_check"
+2026-11-21 13:04:07.347 IST [23940] DETAIL:  Failing row contains (c2e32855-b92e-45dc-ad48-3fc105027ce6, 5b1f1373-1e14-4a40-9021-c01e73c86483, RETURN,  	 , 2026-11-21 13:04:07.343+05:30).
+2026-11-21 13:04:07.347 IST [23940] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "StateReview"."createdAt"
+2026-11-21 13:04:07.347 IST [23940] ERROR:  new row for relation "StateReview" violates check constraint "StateReview_decision_comment_check"
+2026-11-21 13:04:07.347 IST [23940] DETAIL:  Failing row contains (c2e32855-b92e-45dc-ad48-3fc105027ce6, 5b1f1373-1e14-4a40-9021-c01e73c86483, REJECT,  	 , 2026-11-21 13:04:07.343+05:30).
+2026-11-21 13:04:07.347 IST [23940] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "StateReview"."createdAt"
+2026-11-21 13:04:07.349 IST [23940] ERROR:  duplicate key value violates unique constraint "StateReview_pkey"
+2026-11-21 13:04:07.349 IST [23940] DETAIL:  Key ("revisionId")=(c2e32855-b92e-45dc-ad48-3fc105027ce6) already exists.
+2026-11-21 13:04:07.349 IST [23940] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision) VALUES ($1::VARCHAR, $2::VARCHAR, $3) RETURNING "StateReview".comment, "StateReview"."createdAt"
+2026-11-21 13:04:26.843 IST [14451] LOG:  checkpoint starting: time
+2026-11-21 13:04:31.833 IST [23985] ERROR:  new row for relation "QualityReview" violates check constraint "QualityReview_decision_comment_check"
+2026-11-21 13:04:31.833 IST [23985] DETAIL:  Failing row contains (42f688e9-26e8-4396-baf9-237d467190d6, e91be6e7-9cc2-4516-aca8-ff6dcdb212da, RETURN,  
+	 , 2026-11-21 13:04:31.826+05:30).
+2026-11-21 13:04:31.833 IST [23985] STATEMENT:  INSERT INTO "QualityReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "QualityReview"."createdAt"
+2026-11-21 13:04:31.836 IST [23985] ERROR:  duplicate key value violates unique constraint "QualityReview_pkey"
+2026-11-21 13:04:31.836 IST [23985] DETAIL:  Key ("revisionId")=(42f688e9-26e8-4396-baf9-237d467190d6) already exists.
+2026-11-21 13:04:31.836 IST [23985] STATEMENT:  INSERT INTO "QualityReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "QualityReview"."createdAt"
+2026-11-21 13:04:33.579 IST [23990] ERROR:  new row for relation "StateReview" violates check constraint "StateReview_decision_comment_check"
+2026-11-21 13:04:33.579 IST [23990] DETAIL:  Failing row contains (0ed4f37b-bd0e-43b8-9c09-6470f566f35b, 9681ab44-e3ee-48ec-869d-e82bd1cc0078, RETURN,  	 , 2026-11-21 13:04:33.575+05:30).
+2026-11-21 13:04:33.579 IST [23990] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "StateReview"."createdAt"
+2026-11-21 13:04:33.579 IST [23990] ERROR:  new row for relation "StateReview" violates check constraint "StateReview_decision_comment_check"
+2026-11-21 13:04:33.579 IST [23990] DETAIL:  Failing row contains (0ed4f37b-bd0e-43b8-9c09-6470f566f35b, 9681ab44-e3ee-48ec-869d-e82bd1cc0078, REJECT,  	 , 2026-11-21 13:04:33.575+05:30).
+2026-11-21 13:04:33.579 IST [23990] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "StateReview"."createdAt"
+2026-11-21 13:04:33.582 IST [23990] ERROR:  duplicate key value violates unique constraint "StateReview_pkey"
+2026-11-21 13:04:33.582 IST [23990] DETAIL:  Key ("revisionId")=(0ed4f37b-bd0e-43b8-9c09-6470f566f35b) already exists.
+2026-11-21 13:04:33.582 IST [23990] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision) VALUES ($1::VARCHAR, $2::VARCHAR, $3) RETURNING "StateReview".comment, "StateReview"."createdAt"
+2026-11-21 13:04:38.518 IST [24003] ERROR:  new row for relation "QualityReview" violates check constraint "QualityReview_decision_comment_check"
+2026-11-21 13:04:38.518 IST [24003] DETAIL:  Failing row contains (91d4dbba-0d86-474d-b9fb-59f1ed130067, f30984ac-5cb2-4fb5-8d43-214b333b7ec6, RETURN,  
+	 , 2026-11-21 13:04:38.513+05:30).
+2026-11-21 13:04:38.518 IST [24003] STATEMENT:  INSERT INTO "QualityReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "QualityReview"."createdAt"
+2026-11-21 13:04:38.520 IST [24003] ERROR:  duplicate key value violates unique constraint "QualityReview_pkey"
+2026-11-21 13:04:38.520 IST [24003] DETAIL:  Key ("revisionId")=(91d4dbba-0d86-474d-b9fb-59f1ed130067) already exists.
+2026-11-21 13:04:38.520 IST [24003] STATEMENT:  INSERT INTO "QualityReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "QualityReview"."createdAt"
+2026-11-21 13:04:40.211 IST [24007] ERROR:  new row for relation "StateReview" violates check constraint "StateReview_decision_comment_check"
+2026-11-21 13:04:40.211 IST [24007] DETAIL:  Failing row contains (741a95f3-c287-4b1a-92fd-42194633d5e7, cb350e97-802d-476a-b56f-69f59f93286b, RETURN,  	 , 2026-11-21 13:04:40.208+05:30).
+2026-11-21 13:04:40.211 IST [24007] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "StateReview"."createdAt"
+2026-11-21 13:04:40.212 IST [24007] ERROR:  new row for relation "StateReview" violates check constraint "StateReview_decision_comment_check"
+2026-11-21 13:04:40.212 IST [24007] DETAIL:  Failing row contains (741a95f3-c287-4b1a-92fd-42194633d5e7, cb350e97-802d-476a-b56f-69f59f93286b, REJECT,  	 , 2026-11-21 13:04:40.208+05:30).
+2026-11-21 13:04:40.212 IST [24007] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "StateReview"."createdAt"
+2026-11-21 13:04:40.214 IST [24007] ERROR:  duplicate key value violates unique constraint "StateReview_pkey"
+2026-11-21 13:04:40.214 IST [24007] DETAIL:  Key ("revisionId")=(741a95f3-c287-4b1a-92fd-42194633d5e7) already exists.
+2026-11-21 13:04:40.214 IST [24007] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision) VALUES ($1::VARCHAR, $2::VARCHAR, $3) RETURNING "StateReview".comment, "StateReview"."createdAt"
+2026-11-21 13:05:24.952 IST [14451] LOG:  checkpoint complete: wrote 574 buffers (3.5%), wrote 2 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=58.081 s, sync=0.026 s, total=58.110 s; sync files=491, longest=0.002 s, average=0.001 s; distance=4619 kB, estimate=20643 kB; lsn=0/86C28B8, redo lsn=0/7F29DF8
+2026-11-21 13:07:59.276 IST [24299] ERROR:  new row for relation "QualityReview" violates check constraint "QualityReview_decision_comment_check"
+2026-11-21 13:07:59.276 IST [24299] DETAIL:  Failing row contains (841b4488-eac0-402b-a03f-4ab62dd21e36, 2a861fa9-898c-442c-9f3d-cfbc9b6893c6, RETURN,  
+	 , 2026-11-21 13:07:59.266+05:30).
+2026-11-21 13:07:59.276 IST [24299] STATEMENT:  INSERT INTO "QualityReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "QualityReview"."createdAt"
+2026-11-21 13:07:59.280 IST [24299] ERROR:  duplicate key value violates unique constraint "QualityReview_pkey"
+2026-11-21 13:07:59.280 IST [24299] DETAIL:  Key ("revisionId")=(841b4488-eac0-402b-a03f-4ab62dd21e36) already exists.
+2026-11-21 13:07:59.280 IST [24299] STATEMENT:  INSERT INTO "QualityReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "QualityReview"."createdAt"
+2026-11-21 13:08:01.068 IST [24303] ERROR:  new row for relation "StateReview" violates check constraint "StateReview_decision_comment_check"
+2026-11-21 13:08:01.068 IST [24303] DETAIL:  Failing row contains (56f6ab64-ffcb-4b85-bb42-736b0014c56c, 743fdb17-7913-40c5-97c3-81628c89506a, RETURN,  	 , 2026-11-21 13:08:01.065+05:30).
+2026-11-21 13:08:01.068 IST [24303] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "StateReview"."createdAt"
+2026-11-21 13:08:01.069 IST [24303] ERROR:  new row for relation "StateReview" violates check constraint "StateReview_decision_comment_check"
+2026-11-21 13:08:01.069 IST [24303] DETAIL:  Failing row contains (56f6ab64-ffcb-4b85-bb42-736b0014c56c, 743fdb17-7913-40c5-97c3-81628c89506a, REJECT,  	 , 2026-11-21 13:08:01.065+05:30).
+2026-11-21 13:08:01.069 IST [24303] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "StateReview"."createdAt"
+2026-11-21 13:08:01.071 IST [24303] ERROR:  duplicate key value violates unique constraint "StateReview_pkey"
+2026-11-21 13:08:01.071 IST [24303] DETAIL:  Key ("revisionId")=(56f6ab64-ffcb-4b85-bb42-736b0014c56c) already exists.
+2026-11-21 13:08:01.071 IST [24303] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision) VALUES ($1::VARCHAR, $2::VARCHAR, $3) RETURNING "StateReview".comment, "StateReview"."createdAt"
+2026-11-21 13:09:26.955 IST [14451] LOG:  checkpoint starting: time
+2026-11-21 13:12:45.233 IST [14451] LOG:  checkpoint complete: wrote 1961 buffers (12.0%), wrote 2 SLRU buffers; 0 WAL file(s) added, 0 removed, 1 recycled; write=198.255 s, sync=0.019 s, total=198.279 s; sync files=1089, longest=0.001 s, average=0.001 s; distance=14322 kB, estimate=20011 kB; lsn=0/920CCD0, redo lsn=0/8D26918
+2026-11-21 13:14:26.236 IST [14451] LOG:  checkpoint starting: time
+2026-11-21 13:14:33.519 IST [24882] ERROR:  new row for relation "QualityReview" violates check constraint "QualityReview_decision_comment_check"
+2026-11-21 13:14:33.519 IST [24882] DETAIL:  Failing row contains (08c20e9d-3c9b-4fea-bf38-d574f47372bf, 5074e427-ea0d-4535-ba84-cb3f204a2144, RETURN,  
+	 , 2026-11-21 13:14:33.51+05:30).
+2026-11-21 13:14:33.519 IST [24882] STATEMENT:  INSERT INTO "QualityReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "QualityReview"."createdAt"
+2026-11-21 13:14:33.522 IST [24882] ERROR:  duplicate key value violates unique constraint "QualityReview_pkey"
+2026-11-21 13:14:33.522 IST [24882] DETAIL:  Key ("revisionId")=(08c20e9d-3c9b-4fea-bf38-d574f47372bf) already exists.
+2026-11-21 13:14:33.522 IST [24882] STATEMENT:  INSERT INTO "QualityReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "QualityReview"."createdAt"
+2026-11-21 13:14:35.186 IST [24886] ERROR:  new row for relation "StateReview" violates check constraint "StateReview_decision_comment_check"
+2026-11-21 13:14:35.186 IST [24886] DETAIL:  Failing row contains (ef3a0bb1-d1ee-411e-a52e-c9338276be8b, 2176f768-076f-4998-85a9-f73f94a49289, RETURN,  	 , 2026-11-21 13:14:35.183+05:30).
+2026-11-21 13:14:35.186 IST [24886] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "StateReview"."createdAt"
+2026-11-21 13:14:35.187 IST [24886] ERROR:  new row for relation "StateReview" violates check constraint "StateReview_decision_comment_check"
+2026-11-21 13:14:35.187 IST [24886] DETAIL:  Failing row contains (ef3a0bb1-d1ee-411e-a52e-c9338276be8b, 2176f768-076f-4998-85a9-f73f94a49289, REJECT,  	 , 2026-11-21 13:14:35.183+05:30).
+2026-11-21 13:14:35.187 IST [24886] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "StateReview"."createdAt"
+2026-11-21 13:14:35.188 IST [24886] ERROR:  duplicate key value violates unique constraint "StateReview_pkey"
+2026-11-21 13:14:35.188 IST [24886] DETAIL:  Key ("revisionId")=(ef3a0bb1-d1ee-411e-a52e-c9338276be8b) already exists.
+2026-11-21 13:14:35.188 IST [24886] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision) VALUES ($1::VARCHAR, $2::VARCHAR, $3) RETURNING "StateReview".comment, "StateReview"."createdAt"
+2026-11-21 13:16:19.194 IST [14451] LOG:  checkpoint complete: wrote 1113 buffers (6.8%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 1 recycled; write=112.942 s, sync=0.011 s, total=112.958 s; sync files=375, longest=0.002 s, average=0.001 s; distance=5647 kB, estimate=18574 kB; lsn=0/948E3C0, redo lsn=0/92AA718
+2026-11-21 13:19:26.199 IST [14451] LOG:  checkpoint starting: time
+2026-11-21 13:19:51.378 IST [14451] LOG:  checkpoint complete: wrote 248 buffers (1.5%), wrote 2 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=25.171 s, sync=0.004 s, total=25.181 s; sync files=78, longest=0.001 s, average=0.001 s; distance=1950 kB, estimate=16912 kB; lsn=0/9492128, redo lsn=0/9492098
+2026-11-21 13:24:13.776 IST [25631] ERROR:  new row for relation "QualityReview" violates check constraint "QualityReview_decision_comment_check"
+2026-11-21 13:24:13.776 IST [25631] DETAIL:  Failing row contains (57f5ee2f-b29e-4459-975d-4044f995f675, 792e3a41-6083-43f2-9a30-b6e0a185d4ee, RETURN,  
+	 , 2026-11-21 13:24:13.767+05:30).
+2026-11-21 13:24:13.776 IST [25631] STATEMENT:  INSERT INTO "QualityReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "QualityReview"."createdAt"
+2026-11-21 13:24:13.779 IST [25631] ERROR:  duplicate key value violates unique constraint "QualityReview_pkey"
+2026-11-21 13:24:13.779 IST [25631] DETAIL:  Key ("revisionId")=(57f5ee2f-b29e-4459-975d-4044f995f675) already exists.
+2026-11-21 13:24:13.779 IST [25631] STATEMENT:  INSERT INTO "QualityReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "QualityReview"."createdAt"
+2026-11-21 13:24:15.521 IST [25636] ERROR:  new row for relation "StateReview" violates check constraint "StateReview_decision_comment_check"
+2026-11-21 13:24:15.521 IST [25636] DETAIL:  Failing row contains (3f1969da-335c-4c02-9bf8-c6b649f372bc, 1cd06d30-ac2f-40bb-bfd3-169d420a8447, RETURN,  	 , 2026-11-21 13:24:15.518+05:30).
+2026-11-21 13:24:15.521 IST [25636] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "StateReview"."createdAt"
+2026-11-21 13:24:15.522 IST [25636] ERROR:  new row for relation "StateReview" violates check constraint "StateReview_decision_comment_check"
+2026-11-21 13:24:15.522 IST [25636] DETAIL:  Failing row contains (3f1969da-335c-4c02-9bf8-c6b649f372bc, 1cd06d30-ac2f-40bb-bfd3-169d420a8447, REJECT,  	 , 2026-11-21 13:24:15.518+05:30).
+2026-11-21 13:24:15.522 IST [25636] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "StateReview"."createdAt"
+2026-11-21 13:24:15.524 IST [25636] ERROR:  duplicate key value violates unique constraint "StateReview_pkey"
+2026-11-21 13:24:15.524 IST [25636] DETAIL:  Key ("revisionId")=(3f1969da-335c-4c02-9bf8-c6b649f372bc) already exists.
+2026-11-21 13:24:15.524 IST [25636] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision) VALUES ($1::VARCHAR, $2::VARCHAR, $3) RETURNING "StateReview".comment, "StateReview"."createdAt"
+2026-11-21 13:24:26.382 IST [14451] LOG:  checkpoint starting: time
+2026-11-21 13:25:12.306 IST [25725] ERROR:  new row for relation "QualityReview" violates check constraint "QualityReview_decision_comment_check"
+2026-11-21 13:25:12.306 IST [25725] DETAIL:  Failing row contains (792378b9-1076-4df7-9f79-93f8667655e7, 59b27097-714a-427c-adfb-c8eb7321f8da, RETURN,  
+	 , 2026-11-21 13:25:12.301+05:30).
+2026-11-21 13:25:12.306 IST [25725] STATEMENT:  INSERT INTO "QualityReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "QualityReview"."createdAt"
+2026-11-21 13:25:12.308 IST [25725] ERROR:  duplicate key value violates unique constraint "QualityReview_pkey"
+2026-11-21 13:25:12.308 IST [25725] DETAIL:  Key ("revisionId")=(792378b9-1076-4df7-9f79-93f8667655e7) already exists.
+2026-11-21 13:25:12.308 IST [25725] STATEMENT:  INSERT INTO "QualityReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "QualityReview"."createdAt"
+2026-11-21 13:25:13.970 IST [25729] ERROR:  new row for relation "StateReview" violates check constraint "StateReview_decision_comment_check"
+2026-11-21 13:25:13.970 IST [25729] DETAIL:  Failing row contains (d7cbefbd-d216-448a-bdab-fd6da37c81a4, 7dae5d24-8131-4fff-922f-7213a5a90c8b, RETURN,  	 , 2026-11-21 13:25:13.967+05:30).
+2026-11-21 13:25:13.970 IST [25729] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "StateReview"."createdAt"
+2026-11-21 13:25:13.971 IST [25729] ERROR:  new row for relation "StateReview" violates check constraint "StateReview_decision_comment_check"
+2026-11-21 13:25:13.971 IST [25729] DETAIL:  Failing row contains (d7cbefbd-d216-448a-bdab-fd6da37c81a4, 7dae5d24-8131-4fff-922f-7213a5a90c8b, REJECT,  	 , 2026-11-21 13:25:13.967+05:30).
+2026-11-21 13:25:13.971 IST [25729] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "StateReview"."createdAt"
+2026-11-21 13:25:13.973 IST [25729] ERROR:  duplicate key value violates unique constraint "StateReview_pkey"
+2026-11-21 13:25:13.973 IST [25729] DETAIL:  Key ("revisionId")=(d7cbefbd-d216-448a-bdab-fd6da37c81a4) already exists.
+2026-11-21 13:25:13.973 IST [25729] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision) VALUES ($1::VARCHAR, $2::VARCHAR, $3) RETURNING "StateReview".comment, "StateReview"."createdAt"
+2026-11-21 13:25:40.017 IST [25775] ERROR:  new row for relation "QualityReview" violates check constraint "QualityReview_decision_comment_check"
+2026-11-21 13:25:40.017 IST [25775] DETAIL:  Failing row contains (a52f265b-2e67-4ac9-b64f-fc919012b959, e0c475ba-99c3-4564-b6d1-f070ff04cd39, RETURN,  
+	 , 2026-11-21 13:25:40.011+05:30).
+2026-11-21 13:25:40.017 IST [25775] STATEMENT:  INSERT INTO "QualityReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "QualityReview"."createdAt"
+2026-11-21 13:25:40.019 IST [25775] ERROR:  duplicate key value violates unique constraint "QualityReview_pkey"
+2026-11-21 13:25:40.019 IST [25775] DETAIL:  Key ("revisionId")=(a52f265b-2e67-4ac9-b64f-fc919012b959) already exists.
+2026-11-21 13:25:40.019 IST [25775] STATEMENT:  INSERT INTO "QualityReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "QualityReview"."createdAt"
+2026-11-21 13:25:41.793 IST [25779] ERROR:  new row for relation "StateReview" violates check constraint "StateReview_decision_comment_check"
+2026-11-21 13:25:41.793 IST [25779] DETAIL:  Failing row contains (6a001f30-97f2-4ff1-a464-4d1c76c6d06a, 6113c44a-9828-4c70-8fff-d95b845d3b31, RETURN,  	 , 2026-11-21 13:25:41.79+05:30).
+2026-11-21 13:25:41.793 IST [25779] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "StateReview"."createdAt"
+2026-11-21 13:25:41.794 IST [25779] ERROR:  new row for relation "StateReview" violates check constraint "StateReview_decision_comment_check"
+2026-11-21 13:25:41.794 IST [25779] DETAIL:  Failing row contains (6a001f30-97f2-4ff1-a464-4d1c76c6d06a, 6113c44a-9828-4c70-8fff-d95b845d3b31, REJECT,  	 , 2026-11-21 13:25:41.79+05:30).
+2026-11-21 13:25:41.794 IST [25779] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "StateReview"."createdAt"
+2026-11-21 13:25:41.796 IST [25779] ERROR:  duplicate key value violates unique constraint "StateReview_pkey"
+2026-11-21 13:25:41.796 IST [25779] DETAIL:  Key ("revisionId")=(6a001f30-97f2-4ff1-a464-4d1c76c6d06a) already exists.
+2026-11-21 13:25:41.796 IST [25779] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision) VALUES ($1::VARCHAR, $2::VARCHAR, $3) RETURNING "StateReview".comment, "StateReview"."createdAt"
+2026-11-21 13:26:27.102 IST [14451] LOG:  checkpoint complete: wrote 887 buffers (5.4%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=120.649 s, sync=0.068 s, total=120.720 s; sync files=1609, longest=0.002 s, average=0.001 s; distance=6365 kB, estimate=15857 kB; lsn=0/AEAA8C0, redo lsn=0/9AC9668
+2026-11-21 13:29:26.105 IST [14451] LOG:  checkpoint starting: time
+2026-11-21 13:33:56.091 IST [14451] LOG:  checkpoint complete: wrote 3227 buffers (19.7%), wrote 2 SLRU buffers; 0 WAL file(s) added, 0 removed, 1 recycled; write=269.976 s, sync=0.004 s, total=269.988 s; sync files=847, longest=0.001 s, average=0.001 s; distance=20473 kB, estimate=20473 kB; lsn=0/AEE76C8, redo lsn=0/AEC7D40
+2026-11-21 13:41:06.898 IST [26969] ERROR:  new row for relation "QualityReview" violates check constraint "QualityReview_decision_comment_check"
+2026-11-21 13:41:06.898 IST [26969] DETAIL:  Failing row contains (154df3f4-d3a9-41d8-be10-41613f21544f, 54aa8534-3fbb-4928-8201-73bee2091ad2, RETURN,  
+	 , 2026-11-21 13:41:06.891+05:30).
+2026-11-21 13:41:06.898 IST [26969] STATEMENT:  INSERT INTO "QualityReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "QualityReview"."createdAt"
+2026-11-21 13:41:06.901 IST [26969] ERROR:  duplicate key value violates unique constraint "QualityReview_pkey"
+2026-11-21 13:41:06.901 IST [26969] DETAIL:  Key ("revisionId")=(154df3f4-d3a9-41d8-be10-41613f21544f) already exists.
+2026-11-21 13:41:06.901 IST [26969] STATEMENT:  INSERT INTO "QualityReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "QualityReview"."createdAt"
+2026-11-21 13:41:08.959 IST [26976] ERROR:  new row for relation "StateReview" violates check constraint "StateReview_decision_comment_check"
+2026-11-21 13:41:08.959 IST [26976] DETAIL:  Failing row contains (d9451cf3-02c8-4877-af45-5aea6179a6b9, 1d8df757-67b8-42f7-840d-1b6fa5861898, RETURN,  	 , 2026-11-21 13:41:08.956+05:30).
+2026-11-21 13:41:08.959 IST [26976] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "StateReview"."createdAt"
+2026-11-21 13:41:08.960 IST [26976] ERROR:  new row for relation "StateReview" violates check constraint "StateReview_decision_comment_check"
+2026-11-21 13:41:08.960 IST [26976] DETAIL:  Failing row contains (d9451cf3-02c8-4877-af45-5aea6179a6b9, 1d8df757-67b8-42f7-840d-1b6fa5861898, REJECT,  	 , 2026-11-21 13:41:08.956+05:30).
+2026-11-21 13:41:08.960 IST [26976] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision, comment) VALUES ($1::VARCHAR, $2::VARCHAR, $3, $4::VARCHAR) RETURNING "StateReview"."createdAt"
+2026-11-21 13:41:08.962 IST [26976] ERROR:  duplicate key value violates unique constraint "StateReview_pkey"
+2026-11-21 13:41:08.962 IST [26976] DETAIL:  Key ("revisionId")=(d9451cf3-02c8-4877-af45-5aea6179a6b9) already exists.
+2026-11-21 13:41:08.962 IST [26976] STATEMENT:  INSERT INTO "StateReview" ("revisionId", "reviewerId", decision) VALUES ($1::VARCHAR, $2::VARCHAR, $3) RETURNING "StateReview".comment, "StateReview"."createdAt"
+2026-11-21 13:44:26.101 IST [14451] LOG:  checkpoint starting: time
+2026-11-21 13:46:31.299 IST [14451] LOG:  checkpoint complete: wrote 1234 buffers (7.5%), wrote 2 SLRU buffers; 0 WAL file(s) added, 0 removed, 1 recycled; write=125.174 s, sync=0.014 s, total=125.200 s; sync files=428, longest=0.001 s, average=0.001 s; distance=6614 kB, estimate=19087 kB; lsn=0/B53D7A0, redo lsn=0/B53D710
+2026-11-21 13:54:26.308 IST [14451] LOG:  checkpoint starting: time
+2026-11-21 13:54:27.842 IST [14451] LOG:  checkpoint complete: wrote 15 buffers (0.1%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=1.527 s, sync=0.002 s, total=1.536 s; sync files=15, longest=0.001 s, average=0.001 s; distance=63 kB, estimate=17185 kB; lsn=0/B54D688, redo lsn=0/B54D630
+2026-11-21 13:59:26.845 IST [14451] LOG:  checkpoint starting: time
+2026-11-21 13:59:28.790 IST [14451] LOG:  checkpoint complete: wrote 19 buffers (0.1%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=1.936 s, sync=0.003 s, total=1.946 s; sync files=20, longest=0.001 s, average=0.001 s; distance=51 kB, estimate=15471 kB; lsn=0/B55A2A8, redo lsn=0/B55A250
+2026-11-21 14:09:26.792 IST [14451] LOG:  checkpoint starting: time
+2026-11-21 14:09:30.467 IST [14451] LOG:  checkpoint complete: wrote 36 buffers (0.2%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=3.664 s, sync=0.004 s, total=3.675 s; sync files=27, longest=0.001 s, average=0.001 s; distance=114 kB, estimate=13936 kB; lsn=0/B57AB70, redo lsn=0/B576BE8
+2026-11-21 14:14:26.471 IST [14451] LOG:  checkpoint starting: time
+2026-11-21 14:14:31.672 IST [14451] LOG:  checkpoint complete: wrote 51 buffers (0.3%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=5.190 s, sync=0.005 s, total=5.205 s; sync files=42, longest=0.001 s, average=0.001 s; distance=177 kB, estimate=12560 kB; lsn=0/B5A30F8, redo lsn=0/B5A30A0

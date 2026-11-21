@@ -1,0 +1,83 @@
+.student-header {
+  min-height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 12px max(20px, calc((100% - 1120px) / 2));
+  background: white;
+  border-bottom: 1px solid var(--border);
+}
+
+.student-brand,
+.student-header nav,
+.student-header nav a,
+.student-certificate-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.student-brand {
+  color: var(--navy);
+  font-weight: 750;
+}
+
+.student-header nav a {
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+
+.student-header nav a.active {
+  background: #ecf0ff;
+  color: var(--indigo);
+  font-weight: 650;
+}
+
+.student-content {
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.student-fields dd {
+  overflow-wrap: anywhere;
+}
+
+.student-certificate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: 16px;
+}
+
+.student-certificate-header {
+  justify-content: space-between;
+}
+
+.student-certificate-number {
+  grid-column: 1 / -1;
+}
+
+.student-certificate-actions {
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.student-password-form {
+  max-width: 550px;
+}
+
+.student-password-form > button {
+  align-self: flex-start;
+}
+
+.badge.active {
+  background: #e6f6ed;
+  color: #136b4b;
+}
+
+.badge.cancelled {
+  background: #ffedf0;
+  color: #a52740;
+}

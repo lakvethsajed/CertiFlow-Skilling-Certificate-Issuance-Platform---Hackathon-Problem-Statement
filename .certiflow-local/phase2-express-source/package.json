@@ -1,0 +1,39 @@
+{
+  "name": "certiflow-backend",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "tsx src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test test/*.test.ts",
+    "seed": "tsx prisma/seed.ts",
+    "lint": "cd .. && backend/node_modules/.bin/eslint backend/src backend/prisma/seed.ts backend/test frontend/src frontend/test frontend/vite.config.js",
+    "format": "cd .. && backend/node_modules/.bin/prettier --write backend/src backend/prisma/seed.ts backend/test backend/package.json backend/tsconfig.json 'frontend/src/**/*.{js,jsx}' frontend/test frontend/vite.config.js frontend/package.json .prettierrc.json eslint.config.mjs",
+    "format:check": "cd .. && backend/node_modules/.bin/prettier --check backend/src backend/prisma/seed.ts backend/test backend/package.json backend/tsconfig.json 'frontend/src/**/*.{js,jsx}' frontend/test frontend/vite.config.js frontend/package.json .prettierrc.json eslint.config.mjs"
+  },
+  "dependencies": {
+    "@prisma/client": "6.19.0",
+    "bcryptjs": "^3.0.2",
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/jsonwebtoken": "^9.0.0",
+    "@types/node": "^20.0.0",
+    "eslint": "^9.0.0",
+    "prettier": "^3.0.0",
+    "prisma": "6.19.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.9.0",
+    "typescript-eslint": "^8.0.0"
+  },
+  "overrides": {
+    "deepmerge-ts": "^8.0.0",
+    "effect": "^3.22.1"
+  }
+}

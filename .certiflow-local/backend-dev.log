@@ -1,0 +1,280 @@
+INFO:     Started server process [22375]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:3001 (Press CTRL+C to quit)
+INFO:     127.0.0.1:52767 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52770 - "GET /api/state/dashboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52772 - "POST /api/auth/logout HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:52774 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52776 - "GET /api/quality/dashboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52778 - "POST /api/auth/logout HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:52780 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52782 - "GET /api/district/dashboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52784 - "POST /api/auth/logout HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:52786 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52788 - "GET /api/centre/batches HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52790 - "POST /api/auth/logout HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:52811 - "GET /api/auth/session HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52814 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52817 - "GET /api/auth/session HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52820 - "GET /api/state/batches?view=history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52823 - "POST /api/auth/logout HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:52828 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52831 - "GET /api/auth/session HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52834 - "GET /api/quality/batches?view=returned HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52837 - "GET /api/quality/batches?view=rejected HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52840 - "GET /api/quality/batches?view=returned HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52843 - "GET /api/quality/batches?view=rejected HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52846 - "GET /api/quality/batches?view=history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52849 - "GET /api/quality/batches/60e1f5c2-a5b3-4aaf-95c8-86e5dcdd7d7d?revision=1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52852 - "GET /api/quality/batches?view=rejected HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52855 - "GET /api/quality/batches?view=returned HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52877 - "GET /api/quality/batches?view=approved HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52893 - "GET /api/auth/session HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52894 - "GET /api/quality/batches?view=approved HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52901 - "GET /api/auth/session HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52902 - "GET /api/quality/batches?view=approved HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52909 - "GET /api/auth/session HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52910 - "GET /api/quality/batches?view=approved HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52912 - "GET /api/quality/batches?view=history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52913 - "GET /api/quality/batches/60e1f5c2-a5b3-4aaf-95c8-86e5dcdd7d7d?revision=1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52916 - "GET /api/quality/batches?view=approved HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52927 - "POST /api/auth/logout HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:52939 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52943 - "GET /api/auth/session HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52946 - "GET /api/centre/batches HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52949 - "GET /api/centre/batches HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52952 - "GET /api/centre/batches HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52955 - "GET /api/centre/batches HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52958 - "GET /api/centre/batches HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52961 - "PUT /api/centre/batches/60e1f5c2-a5b3-4aaf-95c8-86e5dcdd7d7d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52964 - "GET /api/centre/batches HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52967 - "GET /api/centre/batches HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52970 - "GET /api/centre/batches HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52973 - "GET /api/centre/batches HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52976 - "GET /api/centre/batches HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52979 - "POST /api/auth/logout HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:52982 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52985 - "GET /api/auth/session HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52988 - "GET /api/district/batches?view=approved HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52991 - "GET /api/district/batches?view=pending HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52994 - "GET /api/district/batches/60e1f5c2-a5b3-4aaf-95c8-86e5dcdd7d7d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52997 - "POST /api/district/batches/60e1f5c2-a5b3-4aaf-95c8-86e5dcdd7d7d/approve HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53000 - "POST /api/auth/logout HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:53004 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53007 - "GET /api/auth/session HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53010 - "GET /api/district/batches/60e1f5c2-a5b3-4aaf-95c8-86e5dcdd7d7d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53013 - "GET /api/district/batches?view=approved HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53016 - "GET /api/district/batches?view=pending HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53019 - "GET /api/district/batches/60e1f5c2-a5b3-4aaf-95c8-86e5dcdd7d7d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53022 - "POST /api/district/batches/60e1f5c2-a5b3-4aaf-95c8-86e5dcdd7d7d/approve HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53025 - "POST /api/auth/logout HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:53032 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53035 - "GET /api/auth/session HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53038 - "GET /api/quality/batches?view=pending HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53041 - "GET /api/quality/batches/60e1f5c2-a5b3-4aaf-95c8-86e5dcdd7d7d?revision=2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53044 - "POST /api/quality/batches/60e1f5c2-a5b3-4aaf-95c8-86e5dcdd7d7d/approve HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53047 - "POST /api/auth/logout HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:53051 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53054 - "GET /api/auth/session HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53057 - "GET /api/state/batches?view=approved HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53060 - "GET /api/state/batches?view=history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53063 - "GET /api/state/batches?view=pending HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53066 - "GET /api/state/batches/60e1f5c2-a5b3-4aaf-95c8-86e5dcdd7d7d?revision=2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53069 - "POST /api/state/batches/60e1f5c2-a5b3-4aaf-95c8-86e5dcdd7d7d/approve HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53072 - "GET /api/state/batches/60e1f5c2-a5b3-4aaf-95c8-86e5dcdd7d7d?revision=2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53075 - "GET /api/state/batches?view=approved HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53078 - "POST /api/auth/logout HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:53656 - "GET /api/auth/session HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53707 - "GET /api/auth/session HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [22375]
+INFO:     Started server process [24805]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:3001 (Press CTRL+C to quit)
+INFO:     127.0.0.1:53798 - "GET /api/student/profile HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:53800 - "GET /api/student/certificates HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:53802 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53805 - "GET /api/centre/batches HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53807 - "GET /api/student/profile HTTP/1.1" 403 Forbidden
+INFO:     127.0.0.1:53809 - "POST /api/auth/logout HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:53811 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53813 - "GET /api/district/dashboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53815 - "GET /api/student/profile HTTP/1.1" 403 Forbidden
+INFO:     127.0.0.1:53817 - "POST /api/auth/logout HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:53819 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53821 - "GET /api/quality/dashboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53823 - "GET /api/student/profile HTTP/1.1" 403 Forbidden
+INFO:     127.0.0.1:53825 - "POST /api/auth/logout HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:53827 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53829 - "GET /api/state/dashboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53831 - "GET /api/student/profile HTTP/1.1" 403 Forbidden
+INFO:     127.0.0.1:53833 - "POST /api/auth/logout HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:53835 - "POST /api/student/auth/login HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:53860 - "GET /api/auth/session HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53869 - "POST /api/student/activation/request HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:54077 - "GET /api/auth/session HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54107 - "POST /api/student/activation/request HTTP/1.1" 202 Accepted
+INFO:     Development student activation code for java.trainee001@example.com: 603572
+INFO:     127.0.0.1:54255 - "GET /api/auth/session HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [24805]
+INFO:     Started server process [25866]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:3001 (Press CTRL+C to quit)
+INFO:     127.0.0.1:54467 - "POST /api/student/activation/request HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54469 - "POST /api/student/activation/verify HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:54472 - "POST /api/centre/batches/00000000-0000-0000-0000-000000000000/activation-codes/export HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:54474 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54477 - "GET /api/centre/batches HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54479 - "POST /api/centre/batches/00000000-0000-0000-0000-000000000000/activation-codes/export HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54481 - "POST /api/auth/logout HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:54582 - "GET /api/auth/session HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54661 - "POST /api/student/auth/login HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:54664 - "POST /api/student/auth/login HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:54672 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54675 - "GET /api/auth/session HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54678 - "GET /api/centre/batches HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54686 - "GET /api/centre/batches HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54689 - "GET /api/centre/batches HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54692 - "POST /api/centre/batches/60e1f5c2-a5b3-4aaf-95c8-86e5dcdd7d7d/activation-codes/export HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54731 - "POST /api/auth/logout HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:54740 - "POST /api/student/activation/verify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54743 - "POST /api/student/activation/complete HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:54759 - "POST /api/student/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54762 - "GET /api/auth/session HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54765 - "GET /api/student/certificates?page=1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54768 - "GET /api/student/profile HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54772 - "GET /api/student/certificates/6fa5d2d9-1205-44ee-8c95-6148caca9cc2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54776 - "GET /api/student/certificates/6fa5d2d9-1205-44ee-8c95-6148caca9cc2/download HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54782 - "GET /api/student/profile HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54781 - "GET /api/student/certificates?page=1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54785 - "GET /api/student/profile HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54791 - "GET /api/student/profile HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54790 - "GET /api/student/certificates?page=1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54794 - "POST /api/student/auth/logout HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:54797 - "GET /api/certificates/CF-191DC1F8FD5D4E9483452AEE2B76EC68 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54801 - "GET /api/certificates/191DC1F8FD5D4E9483452AEE2B76EC68 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54804 - "GET /api/certificates/191DC1F8FD5D4E9483452AEE2B76EC68 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54807 - "GET /api/certificates/191DC1F8FD5D4E9483452AEE2B76EC68 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54810 - "GET /api/certificates/191DC1F8FD5D4E9483452AEE2B76EC68 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54813 - "GET /api/certificates/191DC1F8FD5D4E9483452AEE2B76EC68 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55308 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55311 - "GET /api/auth/session HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55314 - "GET /api/state/dashboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55317 - "GET /api/state/batches?view=pending HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55320 - "GET /api/state/batches?view=approved HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55323 - "GET /api/state/batches?view=history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55326 - "GET /api/state/dashboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55330 - "POST /api/auth/logout HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:55344 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55347 - "GET /api/auth/session HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55350 - "GET /api/centre/batches HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55353 - "GET /api/centre/batches HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55356 - "GET /api/centre/batches HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55359 - "POST /api/centre/batches/60e1f5c2-a5b3-4aaf-95c8-86e5dcdd7d7d/activation-codes/export HTTP/1.1" 409 Conflict
+INFO:     127.0.0.1:55362 - "GET /api/centre/batches HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55365 - "GET /api/centre/batches HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55369 - "POST /api/centre/batches/206b017a-1fc6-4b69-8b1e-bcf1eb62de02/activation-codes/export HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55373 - "POST /api/auth/logout HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:55384 - "POST /api/student/activation/verify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55392 - "POST /api/student/activation/complete HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:55458 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55462 - "GET /api/auth/session HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55465 - "GET /api/centre/batches HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55469 - "GET /api/centre/batches HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55536 - "POST /api/auth/logout HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:55547 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55550 - "GET /api/auth/session HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55553 - "GET /api/centre/batches HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55557 - "GET /api/centre/batches HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55560 - "GET /api/centre/batches HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55563 - "GET /api/centre/batches HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55566 - "GET /api/centre/batches HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55569 - "GET /api/centre/batches HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55572 - "GET /api/centre/batches HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55577 - "GET /api/centre/batches HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55580 - "GET /api/centre/batches HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55583 - "POST /api/centre/batches HTTP/1.1" 201 Created
+INFO:     127.0.0.1:55586 - "GET /api/centre/batches HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55589 - "GET /api/centre/batches HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55592 - "GET /api/centre/batches HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55595 - "POST /api/auth/logout HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:55598 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55601 - "GET /api/auth/session HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55604 - "GET /api/district/dashboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55607 - "GET /api/district/batches?view=pending HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55610 - "GET /api/district/batches/580ff854-8bb9-41d8-a5b7-0bba289d2a3a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55613 - "POST /api/district/batches/580ff854-8bb9-41d8-a5b7-0bba289d2a3a/approve HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55616 - "GET /api/district/batches?view=approved HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "GET /api/district/batches?view=pending HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55622 - "GET /api/district/batches/580ff854-8bb9-41d8-a5b7-0bba289d2a3a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55625 - "POST /api/auth/logout HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:55629 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55632 - "GET /api/auth/session HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55635 - "GET /api/district/batches/580ff854-8bb9-41d8-a5b7-0bba289d2a3a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55638 - "GET /api/district/batches?view=approved HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55641 - "GET /api/district/batches?view=history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55644 - "GET /api/district/batches/580ff854-8bb9-41d8-a5b7-0bba289d2a3a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55648 - "POST /api/district/batches/580ff854-8bb9-41d8-a5b7-0bba289d2a3a/approve HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55651 - "GET /api/district/batches?view=approved HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55654 - "GET /api/district/batches/580ff854-8bb9-41d8-a5b7-0bba289d2a3a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55657 - "POST /api/auth/logout HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:55660 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55663 - "GET /api/auth/session HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55666 - "GET /api/quality/batches?view=pending HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55669 - "GET /api/quality/batches?view=history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55672 - "GET /api/quality/batches/60e1f5c2-a5b3-4aaf-95c8-86e5dcdd7d7d?revision=1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55675 - "GET /api/quality/dashboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55678 - "POST /api/auth/logout HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:55681 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55684 - "GET /api/auth/session HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55687 - "GET /api/state/dashboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55690 - "GET /api/state/batches?view=pending HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55693 - "GET /api/state/batches/580ff854-8bb9-41d8-a5b7-0bba289d2a3a?revision=1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55696 - "POST /api/state/batches/580ff854-8bb9-41d8-a5b7-0bba289d2a3a/approve HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55699 - "GET /api/state/batches/580ff854-8bb9-41d8-a5b7-0bba289d2a3a?revision=1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55702 - "GET /api/state/batches?view=approved HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55705 - "GET /api/state/batches/580ff854-8bb9-41d8-a5b7-0bba289d2a3a?revision=1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55708 - "POST /api/auth/logout HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:55711 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55714 - "GET /api/auth/session HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55717 - "GET /api/centre/batches HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55720 - "GET /api/centre/batches HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55723 - "GET /api/centre/batches HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55726 - "GET /api/centre/batches HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55729 - "GET /api/centre/batches HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55732 - "GET /api/centre/batches HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55735 - "GET /api/centre/batches HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55738 - "GET /api/centre/batches HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55741 - "POST /api/centre/batches/580ff854-8bb9-41d8-a5b7-0bba289d2a3a/activation-codes/export HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55744 - "GET /api/centre/batches HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55747 - "GET /api/centre/batches HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55750 - "GET /api/centre/batches HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55753 - "GET /api/centre/batches HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55756 - "GET /api/centre/batches HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55759 - "POST /api/auth/logout HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:55762 - "POST /api/student/activation/verify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55765 - "POST /api/student/activation/complete HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:55771 - "POST /api/student/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55774 - "GET /api/auth/session HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55780 - "GET /api/student/profile HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55779 - "GET /api/student/certificates?page=1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55783 - "GET /api/student/profile HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55786 - "POST /api/student/auth/logout HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:55792 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55795 - "GET /api/auth/session HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55798 - "GET /api/state/dashboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55801 - "GET /api/state/batches?view=history&search=580ff854-8bb9-41d8-a5b7-0bba289d2a3a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55804 - "GET /api/state/batches/580ff854-8bb9-41d8-a5b7-0bba289d2a3a?revision=1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55807 - "POST /api/auth/logout HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:55810 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55813 - "GET /api/auth/session HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55816 - "GET /api/centre/batches HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55819 - "GET /api/centre/batches HTTP/1.1" 200 OK

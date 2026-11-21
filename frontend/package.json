@@ -1,0 +1,25 @@
+{
+  "name": "certiflow",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node --test",
+    "lint": "cd .. && frontend/node_modules/.bin/eslint frontend/src frontend/test frontend/vite.config.js",
+    "format:check": "cd .. && frontend/node_modules/.bin/prettier --check 'frontend/src/**/*.{js,jsx}' frontend/test frontend/vite.config.js frontend/package.json .prettierrc.json eslint.config.mjs"
+  },
+  "dependencies": {
+    "lucide-react": "^0.468.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.39.5",
+    "prettier": "^3.10.1",
+    "vite": "^6.0.0"
+  }
+}
